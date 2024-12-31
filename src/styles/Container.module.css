@@ -60,3 +60,24 @@
     }
   }
 }
+
+.introduction {
+  /* 原有样式 */
+}
+
+@media (max-width: 768px) {
+  .introduction {
+    /* 调整移动端的定位和大小 */
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .introduction p {
+    /* 调整文字在移动端的位置和大小 */
+    text-align: center;
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+}
