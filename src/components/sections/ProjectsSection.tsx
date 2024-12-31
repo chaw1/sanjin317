@@ -14,9 +14,15 @@ import VanillaTilt from "vanilla-tilt";
 
 const projects = [
   {
-    title: "年度庆典",
+    title: "2023抖音庆典",
     description: "2023抖音嘉年华现场直击，展现主播们的精彩表现。",
     image: "/assets/annualmeeting.mp4",
+    href: "#",
+  },
+  {
+    title: "2024年会",
+    description: "2024迈之年会现场直击",
+    image: "/assets/2024nianhui.mp4",
     href: "#",
   },
   {
