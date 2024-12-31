@@ -37,10 +37,12 @@ const variants = {
 };
 
 const navLinks = [
-  { href: "#home", text: "Home" },
-  { href: "#about", text: "About" },
-  { href: "#projects", text: "Projects" },
-  { href: "#services", text: "Services" },
+  { href: "#home", text: "首页" },
+  { href: "#about", text: "关于迈之" },
+  { href: "#talents", text: "达人展示"},
+  { href: "#projects", text: "迈之动态" },
+  { href: "#services", text: "MCN业务" },
+  { href: "#contact", text: "联系我们" }
 ];
 
 function handleClick(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
@@ -82,7 +84,7 @@ export default function Container(props: ContainerProps) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: "Wendo",
+    title: "迈之文化",
     description: `Full-stack website developer and TypeScript enthusiast.`,
     image: "/assets/logo.webp",
     type: "website",
@@ -162,8 +164,18 @@ export default function Container(props: ContainerProps) {
             <CrossIcon data-hide={!isOpen} />
           </button>
         </div>
-        <Link href="/">
-          <span className="text-lg font-semibold">wendo</span>
+        {/* Logo和公司名称部分 */}
+        <Link href="/" className="flex items-center space-x-2">
+          {/* Logo */}
+          {/* 公司名称 - 使用更醒目的样式 */}
+          <div className="flex flex-col">
+            <span className="text-2xl font-bold tracking-tight bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
+              迈之文化
+            </span>
+            <span className="text-sm text-muted-foreground">
+              传媒有限公司
+            </span>
+          </div>
         </Link>
 
         {/* Desktop menu */}

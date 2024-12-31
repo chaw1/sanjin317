@@ -24,6 +24,8 @@ const slideUp = {
 };
 
 const words = [
+  "欢迎来到，迈之文化",
+  "你好",
   "Hello",
   "Bonjour",
   "Ciao",
@@ -31,7 +33,6 @@ const words = [
   "やあ",
   "Hallå",
   "Guten tag",
-  "Hallo",
 ];
 
 export default function Preloader() {
